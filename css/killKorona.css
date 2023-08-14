@@ -1,0 +1,123 @@
+body{
+    background-image: url("../images/worldMap.jpg");
+    background-size:cover;
+}
+#coronaContainer>div{
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 50px;
+    height: 164px;
+    background-image:url('../images/corona.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#start{
+    background-color: #5e3dff; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#start:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#filter{
+    position:fixed;
+    bottom:10px;
+    border: solid black 3px;
+    border-radius:5px;
+    margin:5px;
+    text-align: center;
+    background-color:lightsteelblue;
+    padding:10px;
+}
+
+.selectors{
+    margin:0 0 5px 0;
+    padding:0;
+}
+
+.selectors select{
+    width:100px;
+    border:1px solid black;
+    border-radius: 3px;
+}
+.selectors>p{
+    margin:0;
+}
+
+#coronaContainer{
+    margin:0;
+    padding:0;
+}
+
+#heading{
+    border: solid black 3px;
+    border-radius:5px;
+    margin:5px;
+    padding:0;
+    text-align: center;
+    background-color:lightsteelblue;
+}
+
+h2{
+    padding:0;
+    margin:0;
+}
+.scroll-left {
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    padding:0;
+    margin:0;
+}
+.scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: red;
+    margin: 0;
+    padding:0;
+    line-height: 30px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+    0% { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+    0% { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%); /* Browser bug fix */
+        -webkit-transform: translateX(100%); /* Browser bug fix */
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%); /* Browser bug fix */
+        -webkit-transform: translateX(-100%); /* Browser bug fix */
+        transform: translateX(-100%);
+    }
+}

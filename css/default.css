@@ -1,0 +1,32 @@
+#heading{
+    border: solid black 3px;
+    border-radius:5px;
+    margin:5px;
+    text-align: center;
+    background-color:lightsteelblue;
+}
+
+
+.fontArial p{
+    margin:2px;
+}
+
+#copyright{
+    color:darkgreen;
+}
+
+#copyright a{
+    float:right;
+}
+.fontArial, ol dl dt{
+    font-family: "Arial Black", serif;
+    font-size:14px;
+}
+
+#footer {
+    position:fixed;
+    width:100%;
+    height:100px;
+    margin:5px;
+    bottom:10px;
+}

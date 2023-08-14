@@ -1,0 +1,85 @@
+body {
+    background-color: lightslategrey;
+}
+
+#nepal-icon{
+    width:15px;
+}
+
+#nepal{
+    color:darkblue;
+}
+
+h1,h2,ol > li > span{
+    font-family: "Arial Black", serif;
+}
+
+.centerText{
+    text-align: center;
+}
+
+p::first-letter {
+    font-size:150%;
+}
+
+#copyright{
+    color:darkgreen;
+}
+
+.fontArial, ol dl dt{
+    font-family: "Arial Black", serif;
+    font-size:14px;
+}
+
+.poster{
+    position: relative;
+    float:left;
+    margin-right: 10px;
+    max-height: 180px;
+    padding:0 5px 5px 5px;
+}
+
+.listHeight{
+    height: 200px;
+}
+
+.fontArial p{
+    margin:2px;
+}
+
+#snow1{
+    margin-right: 5px;
+    margin-left: 5px;
+    width:20%;
+    height: 200px;
+}
+
+#snow2{
+    margin-right: 5px;
+    margin-left: 5px;
+    width:20%;
+    height: 200px;
+}
+
+/* unvisited link */
+a:link {
+    color: brown;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: brown;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: green;
+}

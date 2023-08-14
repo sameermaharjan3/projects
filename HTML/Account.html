@@ -1,0 +1,67 @@
+<!--STATUS REPORT
+It took me about two hours to complete this assignment.
+The longest time that I had to spend was on bank class.
+Also mocha testing also took me a while as it was a long testing. However,
+this assignment went smooth for me.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Classes</title>
+    <link href="../css/default.css" type="text/css" rel="stylesheet" />
+    <!-- add mocha css, to show results -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <!-- add mocha framework code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd'); // minimal setup
+    </script>
+    <!-- add chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+    </script>
+</head>
+
+<body>
+
+<div id="heading">
+    <h1>Output is in the console</h1>
+    <p>Only Mocha Testing results here!</p>
+<script src="../js/account.js">    </script>
+<script src="../js/savingsaccount.js">    </script>
+<script src="../js/test.js">    </script>
+</div>
+
+<!-- the element with id="mocha" will contain test results -->
+<div id="mocha"></div>
+
+<!-- run tests! -->
+<script>
+    mocha.run();
+</script>
+
+<div class="fontArial">
+
+    <footer>
+        <hr />
+        <p id="copyright">&copy; Maharjan, Sameer
+            <!--HTML and CSS Validator links-->
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"><img
+                    src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png"
+                    alt="css validator"/></a>
+            <a href="https://validator.w3.org/check/referer"><img
+                    src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+                    alt="html validator"/></a>
+            <a href="https://webster.cs.washington.edu/jslint?referer">
+                <img src="../images/w3c-js.png" alt="JavaScript Lint" /></a>
+        </p>
+        <p>Maharishi International University</p>
+        <p>1000 N 4th St, Fairfield, IA 52557</p>
+
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!--STATUS REPORT
+It took me about 3 hours to complete this lab. I really enjoyed doing this lab. I had to spend some
+time on breaking the string down to create different frames and setting them up for the animation
+using set interval. I was not quite sure on what parameters would go in set interval function, but
+I figured it out that the repetition could be done by setting the index to index modulus array's
+length. Later on, I had to fix the text area box as the box itself was resizing when the font size
+increased or decreased.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ASCIImation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/ascii.css" type="text/css" rel="stylesheet">
+    <script src="../js/animations.js"></script>
+    <script src="../js/ascii.js"></script>
+</head>
+
+<body>
+<header>CSE 190 M ASCII Animation Viewer</header>
+<div class="container">
+    <label for="text-area"><textarea id="text-area" cols="80" rows="20"></textarea></label>
+    <fieldset>
+        <legend>Play Controls:</legend>
+        <button id="start">Start</button>
+        <button disabled="disabled" id="stop">Stop</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Animation:</legend>
+        <label for="animation"><select id="animation">
+            <option selected="selected" value="Blank">Blank</option>
+            <option value="Exercise">Exercise</option>
+            <option value="Juggler">Juggler</option>
+            <option value="Bike">Bike</option>
+            <option value="Dive">Dive</option>
+        </select></label>
+    </fieldset>
+    <fieldset>
+        <legend>Size:</legend>
+        <label for="fontsize"><select id="fontsize">
+            <option id='tiny' value="7">Tiny</option>
+            <option id='small' value="10">Small</option>
+            <option id='medium' value="12" selected="selected">Medium</option>
+            <option id='Large' value="16">Large</option>
+            <option id='extralarge' value="24">Extra Large</option>
+            <option id='xxl' value="32">XXL</option>
+        </select></label>
+    </fieldset>
+    <fieldset>
+        <legend>Speed:</legend>
+        <label><input id="turbo" type="checkbox">Turbo</label>
+    </fieldset>
+</div>
+<div id="validate">
+    <a href="http://validator.w3.org/check/referer">
+        <img src="../images/w3c-html.png" alt="html validator">
+    </a><br>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="../images/w3c-css.png" alt="Valid CSS!"></a><br>
+    <a href="http://webster.cs.washington.edu/jslint?referer">
+        <img src="../images/w3c-js.png" alt="JavaScript Lint">
+    </a>
+
+
+</div>
+
+
+
+</body></html>

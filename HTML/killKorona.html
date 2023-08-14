@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clean Screen</title>
+    <link href="../css/killKorona.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="../js/killKorona.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="heading">
+    <h2>SAVE THE WORLD FROM KORONA VIRUS</h2>
+    <div class="scroll-left">
+        <p>Start infecting the world with Corona virus by using filter options provided at the bottom left of the screen.
+            Click on Infect to start the infection.
+            In order to eliminate the virus, use your mouse pointer to click on it. GOOD LUCK!!! </p>
+    </div>
+
+</div>
+
+<!--Image container-->
+<div id="coronaContainer">
+<!--    <div id="circle"></div>-->
+</div>
+
+<!--Game controller inside the filter div-->
+<div id="filter">
+
+    <!--Width selector-->
+    <div class="selectors"><p>Virus Size</p>
+        <label>
+            <select name="width" id="width">
+                <option value="5">5</option>
+                <option value="15 selected">15</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+            </select>
+        </label>
+    </div>
+
+    <!--Growth size selector-->
+    <div class="selectors"><p>Growth Amount</p>
+        <label>
+            <select name="Growth Amount" id="growthAmount">
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="50">50</option>
+            </select>
+        </label>
+    </div>
+
+    <!--Growth rate selector-->
+    <div class="selectors"><p>Growth Rate</p>
+        <label>
+            <select name="Growth Rate" id="growthRate">
+                <option value="10">10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+                <option value="750" selected>750</option>
+                <option value="1000">1000</option>
+            </select>
+        </label>
+    </div>
+
+    <!--Number of circles to display selector-->
+    <div class="selectors"><p>Virus Amount</p>
+        <label>
+            <select name="Growth Rate" id="circleNum">
+                <option value="1">1</option>
+                <option value="10" selected>10</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="250">250</option>
+                <option value="500">500</option>
+
+            </select>
+        </label>
+    </div>
+
+    <button id="start" type="button" value="Infect">Infect</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#navButton li{
+    display: inline;
+    border: 1px solid black;
+    margin-right: 1em;
+    list-style-type: none;
+    padding: 10px;
+    background-color: white;
+}
+
+.nav{
+    overflow: hidden;
+    background-color:red;
+    text-align: center;
+}

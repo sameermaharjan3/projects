@@ -1,0 +1,122 @@
+body{
+    background-image: url("../images/mouseCheese.jpg");
+    background-size: cover;
+}
+h1, h2 {
+    text-align: center;
+}
+
+#heading{
+    border: solid black 3px;
+    border-radius:5px;
+    width:40%;
+    text-align: center;
+    background-color: rgba(176, 196, 222, 0.8);
+    margin: 5px auto;
+}
+
+p {
+    width: 600px;
+    margin: 1em auto;
+}
+
+#maze {
+    margin: auto;
+    position: relative;
+    height: 300px;
+    width: 500px;
+}
+
+#start, #end{
+    position: absolute;
+    top: 205px;
+    height: 30px;
+    width: 50px;
+    border: none;
+    padding: 5px;
+    cursor: default;
+    text-align: center;
+}
+
+
+#maze #start {
+    background-image: url("../images/mouse.png");
+    background-size: 105%;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+#maze #end {
+    background-image: url("../images/cheese.png");
+    background-size: 105%;
+    background-repeat: no-repeat;
+    right: 0;
+}
+
+div.boundary {
+    background-image: url("../images/wall.jpg");
+    border: 1px solid black;
+}
+
+div.boundary.example {
+    margin: auto;
+    width: 100px;
+    height: 25px;
+}
+
+div.youlose {
+    background-color: rgba(255, 136, 136, 0.8);
+}
+
+/*
+Hack hack hack; these are CSS "sibling selectors" for selecting
+neighboring elements.  Necessary to avoid giving ids to the boundary divs
+*/
+
+#maze div.boundary {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 150px;
+    z-index: 1;
+}
+
+#maze div.boundary + div.boundary {
+    border-left: none;
+    border-right: none;
+    z-index: 2;
+
+    left: 151px;
+    height: 50px;
+    width: 198px;
+}
+
+#maze div.boundary + div.boundary + div.boundary {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    z-index: 1;
+
+    left: 348px;
+    height: 200px;
+    width: 150px;
+}
+
+#maze div.boundary + div.boundary + div.boundary + div.boundary {
+    border: 1px black solid;
+
+    top: 250px;
+    left: 0;
+    height: 48px;
+    width: 498px;
+}
+
+#maze div.boundary + div.boundary + div.boundary + div.boundary + div.boundary {
+    border-bottom: none;
+
+    top: 100px;
+    left: 200px;
+    height: 150px;
+    width: 98px;
+}
